@@ -3,7 +3,9 @@ builds your gh-pages branch from pulling master
 '''
 import os
 
-# branch = input("Enter the branch to build from")
+
+# branch = str(input("Enter the branch to build from")) 
+# ^ An alternative if you're building from a branch other than master
 branch = "master"
 
 os.system("git checkout gh-pages")
